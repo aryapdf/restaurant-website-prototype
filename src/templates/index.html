@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff"/>
+
+    <link rel="icon" href="./Rya.png">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="./icons/icon-192px.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <title>R Y A - Resto Catalogue</title>
+</head>
+<a href="#maincontent" class="skipLink" tabindex="0">Go to the Main Page!</a>
+<body>
+    <div id="preloader"></div>
+    <div id="fail">
+        <h5>Failed to load page</h5>
+        <p>Are you sure you are connected?</p>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container logo">
+            <picture>
+                <source id="logo" media="(max-width: 600px)" srcset="./images/Rya-small.jpg">
+                <img id="logo" src='./images/Rya-large.jpg' 
+                     alt="Logo">
+            </picture>        
+        </div>
+    </header>
+
+    <button id="menu" class="headerMenu" tabindex="0" aria-label="navigation-menu">MENU</button>
+    <nav class="nav" id="drawer">
+        <ul class="navList">
+            <li class="navItem"><a href="#/home">HOME</a></li>
+            <li class="navItem"><a href="#/like">FAVORITE</a></li>
+            <li class="navItem"> <a href="https://www.linkedin.com/in/arya-agni-pradana-f-174a78243/" target="_blank">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <main id="maincontent" tabindex="0"></main>
+
+    <footer>
+        <div id="footerTools">
+            <button id="subscribePushNotification" class="btn">Subscribe Push Notification</button>
+            <button id="unsubscribePushNotification" class="btn">Unsubscribe Push Notification</button>
+        </div>
+        <div id="footerDesc">
+            <h3 class="footerText">Copyright&#169;2022 Dicoding Assignment</h3>
+        </div> 
+    </footer>
+</body>
+</html>

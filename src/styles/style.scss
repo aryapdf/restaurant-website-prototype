@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Oswald:wght@200;300;400;500&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+img {
+    display: block;
+}
+
+.skipLink {
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    background-color: #ffd523;
+    color: #2f2e30;
+    z-index: 100;
+    font: 400 44px 'Oswald', sans-serif;
+    top: -200px;
+}
+.skipLink:focus {
+    top: 20px;
+}
+
+header {
+    background-color: (#000);
+}
+.logo {
+    padding-bottom: 30px;
+}
+#logo {
+    width: 150px;
+    margin: 0 auto;
+    border-bottom: 5px solid #ffd523;
+}
+#menu {
+    display:none;
+}
+
+.nav{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navList {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: white;
+}
+.navItem {
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    font: 400 32px 'Oswald', sans-serif;
+    width: 280px;
+}
+a {
+    padding: 1.3em;
+    width: auto;
+    text-decoration: none;
+    color: #2f2e30;
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+}
+a:hover {
+    cursor: pointer;
+}
+
+main {
+    margin: 20px 0;
+    background-color: #f8f8f8;
+    min-height: 800px;
+}
+.hero {
+    background: url(../public/images/hero-image_1.jpg) no-repeat center;
+    background-size: contain;
+    min-width: 1000px;
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+.heroInner {
+    margin: auto;
+}
+.heroTitle {
+    font: 500 250px 'Montserrat';
+    color: #ffd523;
+    text-align: center;
+}
+.heroTagline {
+    position: absolute;
+    right: 36%;
+    font: 300 40px 'Montserrat';
+    color: #ffd523;
+    width: 25%;
+    margin-left: 50px;
+    text-align: center;
+}
+#introduction {
+    margin: 0 auto;
+    padding-top: 25px;
+    height: 500px;
+    display: inline;
+    text-align: center;
+}
+.introImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    width: 100%;
+    gap: 20px;
+}
+.introImage {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+#service {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 10px 10px 0px lightgray;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+}
+#searchElement {
+    position: relative;
+    width: 500px;
+    font: 400 44px 'Montserrat';
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+}
+#searchElement:focus {
+    outline: none;
+}
+button {
+    position: relative;
+    border: none;
+    background: #f1d671;
+}
+button:hover {
+    cursor: pointer;
+}
+#searchButtonElement {
+    width: 160px;
+    font: 400 50px 'Oswald';
+    margin: auto;
+
+}
+.restaurants, .detailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.restaurant {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;  
+}
+
+.cardTitle {
+    font: 500 44px 'Oswald', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.cardSubtitle {
+    font: 500 32px 'Montserrat';
+    color: #ffd523;
+}
+.cardDesc {
+    font: 300 26px 'Montserrat';
+    margin: 25px 25%;
+    width: 50%;
+}
+
+.card {
+    width: 300px;
+    min-height: 300px;
+    height: 90%;
+    margin: 20px;
+    margin-top: 50px;
+    background-color: #ffd523;
+    box-shadow: 0 0px 10px 0px lightgray;
+}
+.restaurantImage {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0px 10px 0px lightgray;
+}
+.restaurantImageDetail {
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: contain;
+    box-shadow: 0 0px 10px 0px lightgray;
+}
+.restaurantInfo {
+    background: #ffd523;
+    min-height: 200px;
+}
+h5, p {
+    margin: 5px;
+    text-align: center;
+    color: #2f2e30;
+}
+h5 {
+    font: 500 24px 'Montserrat';
+}
+p {
+    font: 300 20px 'Montserrat';
+    margin-bottom: 10px;
+}
+.detailDesc {
+    margin: 25px auto;
+}
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #2f2e30;
+    color: #ffd523;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviewList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.review {
+    width: 400px;
+    min-height: autopx;
+    margin: 20px;
+    color: #2f2e30;
+    background-color: rgba(238, 230, 230, 0.226);
+    box-shadow: 0 0px 10px 0px gray;
+    border-radius: 25px;
+}
+
+footer #footerTools {
+    display: flex;
+    font: 500 24px 'Montserrat';
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;  
+}
+footer p {
+    margin-top: 16px;
+  
+    text-align: center;
+    color: #aaaaaa;
+}
+  
+  footer p a {
+    color: #db0000;
+    text-decoration: none;
+}  
+.footerText {
+    margin: auto;
+    color: #ffd523;
+    background-color: #2f2e30;
+    font: 500 24px 'Montserrat';
+    text-align: center;
+    padding: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffd523;
+    border: 1px solid #ffd523;
+    border-radius: 4px;
+    width: 250px;
+
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #2f2e30;
+
+    cursor: pointer;
+    transition: .15s ease-in-out;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.btn:active {
+    background-color: black;
+}
+
+.btn:focus-visible {
+    outline: 3px solid black;
+}
+
+
+#preloader {
+    background: black url(../public/images/loading.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+}
+#fail {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+#fail > h5 {
+    font-size: 48px;
+}

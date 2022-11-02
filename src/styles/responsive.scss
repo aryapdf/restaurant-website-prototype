@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+    .hero {
+        min-width:auto;
+        background-size: contain;
+    }
+    .heroTitle {
+        font-size: 150px;
+    }
+    .heroTagline {
+        font-size: 35px;
+    }
+    .introImage {
+        width: 200px;
+    }
+    #searchElement {
+        width: 250px;
+        height: 50px;
+        font-size: 24px;
+    }
+    #searchButtonElement {
+        width: 100px;
+        height: 50px;
+        font-size: 32px;
+    }
+    .cardTitle {
+        font-size: 40px;
+    }
+    .cardSubtitle {
+        font-size: 28px;
+    }
+    .cardDesc {
+        font-size: 24px;
+    }
+    .footerText {
+        font-size: 20px;
+    }
+    .restaurantImageDetail {
+        min-width: auto;
+        max-width: 550px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 576px) {
+    #menu {
+        display: flex;
+        font: 500 32px 'Oswald';
+        margin: 20px auto;
+        background: transparent;
+        border: none;
+    }
+    #menu:hover {
+        cursor: pointer;
+    }
+    .nav {
+        z-index: 10;
+        background: #fff;
+        width: 100px;
+        position: absolute;
+        -webkit-transform: translate(-250px, 0);
+        transform: translate(-250px, 0);
+        transition: transform 0.5s ease;
+    }
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .navItem {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .hero {
+        min-width:auto;
+        height: 300px;
+        background-size: contain;
+    }
+    .restaurantImageDetail {
+        min-width: auto;
+        max-width: 300px;
+        object-fit: contain;
+        box-shadow: none;
+    }
+    .heroTitle {
+        font-size: 100px;
+    }
+    .heroTagline {
+        font-size: 28px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        right: 0%;
+    }
+    .introImage {
+        width: 200px;
+    }
+    #service {
+        height: 350px;
+    }
+    #searchElement {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+    #searchButtonElement {
+        width: 100px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .introImage {
+        width: 150px;
+        margin: 0;
+    }
+    .cardTitle {
+        font-size: 28px;
+    }
+    .cardSubtitle {
+        font-size: 20px;
+    }
+    .cardDesc {
+        font-size: 16px;
+    }
+    .skipLink {
+        display: none;
+    }
+    .footerText {
+        font-size: 16px;
+    }
+    .card {
+        width: 175px;
+        height: 100%;
+    }
+    .restaurantImage {
+        width: 175px;
+        height: 175px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    footer, #footerTools {
+        flex-direction: row;
+      }
+    
+}
